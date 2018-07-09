@@ -138,7 +138,7 @@ function test_input($data) {
 }
 ?>
         <form  class="form1" action="" method="post">
-        <label> Nombre del plato:</label> <input type="text" name="nom_plato" value=""><span class="error">* <?php echo $v_nom_platoErr;?></span>
+        <label> Inserta Nombre del plato:</label> <input type="text" name="nom_plato" value=""><span class="error">* <?php echo $v_nom_platoErr;?></span>
 <br/>
         <label>Imagen del plato[link]:</label> <input type="text" name="img_plato" value="primero sube la imagen"><span class="error">* <?php echo $v_img_platoErr;?></span>
 <br/>
