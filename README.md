@@ -6,14 +6,14 @@ mantenimiento de palomAPP en PHP
 #netbeans ignore personal stuff
 nbproject/
 
-## generic files to ignore
+## archivos genéricos a ignorar
 *~
 *.lock
 *.DS_Store
 *.swp
 *.out
 
-# Package Files #
+# Paquete de archivos #
 *.jar
 *.war
 *.ear
