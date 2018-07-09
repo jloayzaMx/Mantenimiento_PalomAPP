@@ -106,8 +106,7 @@ and open the template in the editor.
                             <span class="text-muted">Documentación de ayuda</span>
                         </div>
                     </div>
-                     <form  role="form" name="formListCbLanguage"
-    method="post" action="index.php">
+                     
                     <h2 class="sub-header">Idiomas</h2>                
                      
                     <?php
@@ -155,7 +154,10 @@ and open the template in the editor.
                 }
         
                 ?>
-                    <table>   <tr>    <th>ID</th> <th>Nombre del Plato</th> <th>descripcion</th> <th>IMG</th> </tr>
+                    <div class="table-responsive">
+                    <table class="table table-striped">  <thead><tr>    <th>ID</th> <th>Nombre del Plato</th> <th>descripcion</th> <th>IMG</th> </tr></thead>
+                        <tbody>
+                                <form role="form" name="formListCbLanguage" method="post" action="index.php">
 		<?php
    function listarPlatos( $conexion )
 	{
@@ -176,7 +178,7 @@ and open the template in the editor.
                                 
 				while( $objFila = pg_fetch_object($rs) )
                                         
-					echo "<tr><td>".$objFila->id_plato." </td><td> ".$objFila->nom_plato." </td><td> ".$objFila->descripcion." </td><td> ".$objFila->img_plato. "</td></tr>";
+					echo "<tr><td>".$objFila->id_plato." </td><td> ".$objFila->nom_plato." </td><td> ".$objFila->descripcion." </td><td> ".$objFila->img_plato. "</td><td>BOTONES DE ACCIONES</td></tr>";
 			}
 			else
 				echo "No se encontraron platos<br />";
@@ -188,9 +190,12 @@ and open the template in the editor.
                 
 	}
         $ok = listarPlatos( $conexion );     
-                   echo "</table>";  
+                    
                      ?>
-                
+                </form>        
+                            </tbody>      
+                        </table>                    
+                    </div>
                 </div>
             </div>
         </div>
