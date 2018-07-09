@@ -12,7 +12,7 @@ and open the template in the editor.
     <body>
         <a href="manPlato.php">Insertar Platos </a><br/>
         <a href="modPlato.php">Modificar platos </a><br/>
-        <a href="mantenimiento.php">mantenimiento </a><br/>
+        <a href="probandoBT.php">bootstrap </a><br/>
         <a href="mantenimiento.php">mantenimiento </a><br/>
         <a href="mantenimiento.php">mantenimiento </a><br/>
         <a href="mantenimiento.php">mantenimiento </a><br/>

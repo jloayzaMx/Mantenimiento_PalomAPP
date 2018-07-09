@@ -28,7 +28,7 @@ tr:nth-child(even) {
     </head>
     <body>
         
-        <a href="mantenimiento.php">mantenimiento </a>
+        <a title="Mantenimiento" href="mantenimiento.php"><img src="img/base.jpg"></a>
         <?php
         
         ini_set("display_errors", "on");
