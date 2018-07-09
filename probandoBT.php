@@ -82,32 +82,11 @@ and open the template in the editor.
                     </ul>
                 </div>
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">Tablas</h1>
  
-                    <div class="row placeholders">
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
-                            <h4>Empresas</h4>
-                            <span class="text-muted">Empresas definidas</span>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
-                            <h4>Clientes</h4>
-                            <span class="text-muted">Clientes por empresa</span>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="150" height="150" class="img-responsive" alt="Generic placeholder thumbnail">
-                            <h4>Administración</h4>
-                            <span class="text-muted">Administración de tablas auxiliares</span>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="150" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-                            <h4>Ayuda</h4>
-                            <span class="text-muted">Documentación de ayuda</span>
-                        </div>
-                    </div>
+                    
                      
-                    <h2 class="sub-header">Idiomas</h2>                
+                    <h2 class="sub-header">Platos</h2>                
                      
                     <?php
         
@@ -178,7 +157,7 @@ and open the template in the editor.
                                 
 				while( $objFila = pg_fetch_object($rs) )
                                         
-					echo "<tr><td>".$objFila->id_plato." </td><td> ".$objFila->nom_plato." </td><td> ".$objFila->descripcion." </td><td> ".$objFila->img_plato. "</td><td>BOTONES DE ACCIONES</td></tr>";
+					echo "<tr><td>".$objFila->id_plato." </td><td> ".$objFila->nom_plato." </td><td> ".$objFila->descripcion." </td><td> ".$objFila->img_plato. "</td></tr>";
 			}
 			else
 				echo "No se encontraron platos<br />";
